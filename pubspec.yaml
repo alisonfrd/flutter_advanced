@@ -1,0 +1,35 @@
+name: curso_avancado
+description: "A new Flutter project."
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.4.1 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+  http: ^1.2.1
+  provider: ^6.1.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  mocktail: ^1.0.3
+  faker: ^2.1.0
+  flutter_lints: ^3.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - lib/ui/assets/
+
+flutter_launcher_icons:
+  ios: true
+  android: true
+  image_path_android: "lib/ui/assets/icon/android.png"
+  image_path_ios: "lib/ui/assets/icon/ios.png"
+  adaptive_icon_background: "lib/ui/assets/icon/background.png"
+  adaptive_icon_foreground: "lib/ui/assets/icon/foreground.png"
