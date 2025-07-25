@@ -21,7 +21,7 @@ void main() {
 
     verify(() => validation.validate(field: 'email', value: email)).called(1);
   });
-  test('should call Validation with correct email', () async {
+  test('should emit email error if validation fails', () async {
     when(
       () => validation.validate(
           field: any(named: 'field'), value: any(named: 'value')),
