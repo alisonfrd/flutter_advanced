@@ -6,7 +6,7 @@
 2. ✅ Notificar o emailErrorStream com o mesmo erro do Validation, caso retorne erro
 3. Notificar o emailErroStream com null, caso o Validation não retorne erro
 4. ✅ Não notificar o emailErrorStream se o valor for igual ao último
-5. Notificar o isFormValidStream após alterar o e-mail
+5. ✅ Notificar o isFormValidStream após alterar o e-mail
 6. Chamar o Validation ao alterar a senha
 7. Notificar o passwordErrorStream com o mesmo erro do Validation, caso retorne erro
 8. Notificar o passwordErrorStream com null, caso o Validation não retorne erro
