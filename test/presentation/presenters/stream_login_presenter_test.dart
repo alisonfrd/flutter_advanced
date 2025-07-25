@@ -37,4 +37,19 @@ void main() {
     sut.validateEmail(email);
     sut.validateEmail(email);
   });
+
+  test('should emit null if validation succeeds', () async {
+    when(
+      () => validation.validate(field: any(named: 'field'), value: null),
+    ).thenReturn('error');
+
+    sut.emailErrorStream.listen((expectAsync1((error) => expect(error, null))));
+    sut.isFormValidStream
+        .listen((expectAsync1((isValid) => expect(isValid, false))));
+
+    // expectLater(sut.emailErrorStream, emits('error'));
+
+    sut.validateEmail(email);
+    sut.validateEmail(email);
+  });
 }
